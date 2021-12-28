@@ -30,13 +30,13 @@ import java.util.stream.IntStream;
 public class Hindex {
     public static void main(String[] args) {
 
-        int[] arr = new int[]{3, 0, 6, 1, 5, 4000, 2000, 23, 35};
+        int[] arr = new int[]{3, 0, 6, 1, 5};
         int result = calcHindex(arr);
         System.out.println(result);
 
     } // end main
 
-    // 1 부터 10000의 인용횟수 제한범위를 근거로 인트스트림을 통해 반복을 돈다.
+    // 0 부터 10000의 인용횟수 제한범위를 근거로 인트스트림을 통해 반복을 돈다.
     // 필터를 통해 h의 값을 증가시키며 h편의 논문이 h회 이상 인용이 되었는지 확인한다.
     // 필터를 통해 h값 이상 인용된 논문을 찾아내고 도출해낸 배열 길이는 h이상 인용된 논문의 수이다.
     // 해당조건의 부합하는 다수의  h 값들 중 최댓값이 H-Index이다. 따라서 max를 통해 최댓값을 도출해 낸다.
