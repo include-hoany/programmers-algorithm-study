@@ -96,11 +96,11 @@ public class FunctionDevelopment {
             if(completion > 0) resultArr.add(completion);
 
             // 하루가 지날때 마다 작업량을 카운트 해준다.
-            IntStream.range(0, speeds.length).forEach(idx -> speedArr[idx] += speeds[idx] );
+            IntStream.range(0, speeds.length).forEach(idx -> speedArr[idx] += speeds[idx]);
         }
 
         // 완료된 리스트를 정수 배열로 리턴한다.
-        return resultArr.stream().mapToInt( r -> r).toArray();
+        return resultArr.stream().mapToInt(r -> r).toArray();
 
     } // end method
 
